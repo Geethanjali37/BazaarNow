@@ -130,7 +130,7 @@
   .btn-hero {
     @apply inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold text-lg 
            transition-all duration-300 transform hover:scale-105 active:scale-95
-           shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)];
+           shadow-lg hover:shadow-xl;
   }
   
   .btn-hero-primary {
@@ -148,7 +148,7 @@
   
   /* Animated elements */
   .fade-in-up {
-    @apply opacity-0 translate-y-8 transition-all duration-700 ease-[var(--ease-smooth)];
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
   }
   
   .fade-in-up.animate {
@@ -157,8 +157,8 @@
   
   /* Feature cards */
   .feature-card {
-    @apply bg-card rounded-3xl p-8 shadow-[var(--shadow-soft)] 
-           hover:shadow-[var(--shadow-medium)] transition-all duration-300
+    @apply bg-card rounded-3xl p-8 shadow-lg 
+           hover:shadow-xl transition-all duration-300
            hover:-translate-y-2;
   }
   
